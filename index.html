@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processor</title>
+</head>
+<body>
+    <h1>Upload and Process Images</h1>
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <label for="timestamp">Initial Timestamp:</label><br>
+        <input type="text" id="timestamp" name="timestamp" placeholder="e.g., Dec 28, 2024 at 8:07:32 PM"><br><br>
+
+        <label for="location">Location:</label><br>
+        <textarea id="location" name="location" placeholder="Enter location"></textarea><br><br>
+
+        <label for="images">Select Images:</label><br>
+        <input type="file" id="images" name="images" multiple><br><br>
+
+        <button type="submit">Process Images</button>
+    </form>
+</body>
+</html>
